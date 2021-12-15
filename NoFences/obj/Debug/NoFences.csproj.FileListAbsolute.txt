@@ -1,0 +1,13 @@
+E:\NoFences-master\NoFences-master\NoFences\bin\Debug\NoFences.exe.config
+E:\NoFences-master\NoFences-master\NoFences\bin\Debug\NoFences.exe
+E:\NoFences-master\NoFences-master\NoFences\bin\Debug\NoFences.pdb
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.csproj.AssemblyReference.cache
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.csproj.SuggestedBindingRedirects.cache
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.EditDialog.resources
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.FenceWindow.resources
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.HeightDialog.resources
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.Properties.Resources.resources
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.csproj.GenerateResource.cache
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.csproj.CoreCompileInputs.cache
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.exe
+E:\NoFences-master\NoFences-master\NoFences\obj\Debug\NoFences.pdb
