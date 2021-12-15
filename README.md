@@ -24,4 +24,4 @@
 
 ## Screen Shot
  
- [Primeira tela](../Imagens/Sem título.png)
+ [Primeira tela](Sem título.png)
