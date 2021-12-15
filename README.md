@@ -23,5 +23,4 @@
  **- Probabilidade futura da migração para o Net 6**
 
 ## Screen Shot
- 
- [Primeira tela](screenshot.png)
+ (screenshot.png)
