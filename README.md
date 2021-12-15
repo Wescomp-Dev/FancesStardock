@@ -23,4 +23,4 @@
  **- Probabilidade futura da migração para o Net 6**
 
 ## Screen Shot
-![Screenshot](screenshot.png "NoFences in action")
+![Screenshot](screenshotfw.png "NoFences in action")
