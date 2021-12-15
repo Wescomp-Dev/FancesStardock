@@ -23,6 +23,6 @@
  **- Probabilidade futura da migração para o Net 6**
 
 ## Screen Shot
+
  [Primeira tela]
-  (https://1drv.ms/u/s!AuaD-gh9LGX3k50dCI6JKRSPBpId2Q)
-(https://1drv.ms/u/s!AuaD-gh9LGX3k50dCI6JKRSPBpId2Q)
+  [(https://1drv.ms/u/s!AuaD-gh9LGX3k50dCI6JKRSPBpId2Q0)]
