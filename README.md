@@ -25,4 +25,4 @@
 ## Screen Shot
 
  [Primeira tela]
-  [(https://1drv.ms/u/s!AuaD-gh9LGX3k50dCI6JKRSPBpId2Q0)]
+  (https://1drv.ms/u/s!AuaD-gh9LGX3k50dCI6JKRSPBpId2Q0)
