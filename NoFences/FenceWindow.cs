@@ -57,6 +57,7 @@ namespace NoFences
         public FenceWindow(FenceInfo fenceInfo)
         {
             InitializeComponent();
+            // Abre o textbox para inserir o tittulo do dock
             Titulo();
 
             DropShadow.ApplyShadows(this);
@@ -69,29 +70,40 @@ namespace NoFences
                 titleHeight = 35;
 
             ReloadFonts();
+            // O ero de redimensionamento acopntece quando a função abaixo que chama o tratamento das 
+            // bordas
 
+            // Region = GetRoundedRegion(fenceInfo.Width fenceInfo.Height);
             AllowDrop = true;
 
 
             this.fenceInfo = fenceInfo;
             Text = fenceInfo.Name;
-            Location = new Point(fenceInfo.PosX, fenceInfo.PosY);
+
 
             Width = fenceInfo.Width;
             Height = fenceInfo.Height;
+            Location = new Point(fenceInfo.PosX, fenceInfo.PosY);
 
-            //Chama função para tratar bordas dos docks
-            this.Region = GetRoundedRegion(this.Width, this.Height);
+
             prevHeight = Height;
             lockedToolStripMenuItem.Checked = fenceInfo.Locked;
             minifyToolStripMenuItem.Checked = fenceInfo.CanMinify;
             Minify();
+
         }
         public void Titulo()
         {
-            txtTitu.Visible = true;
-            txtTitu.Focus();
-            txtTitu.SelectAll();
+            if (Text == "Novo Dock")
+            {
+                return;
+            }
+            else
+            {
+                txtTitu.Visible = true;
+                txtTitu.Focus();
+                txtTitu.SelectAll();
+            }
         }
 
         protected override void WndProc(ref Message m)
@@ -542,6 +554,7 @@ namespace NoFences
         }
         public void RenomeTitu()
         {
+
             if (txtTitu.Text != string.Empty)
             {
                 Text = txtTitu.Text;
@@ -553,6 +566,16 @@ namespace NoFences
 
         }
 
+        private void picMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FenceWindow_MouseClick(object sender, MouseEventArgs e)
+        {
+            shouldUpdateSelection = true;
+            Refresh();
+        }
     }
 
 }

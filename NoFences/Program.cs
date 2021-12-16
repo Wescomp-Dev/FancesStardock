@@ -1,4 +1,5 @@
 ﻿using NoFences.Model;
+
 using System;
 using System.Threading;
 using System.Windows.Forms;
@@ -22,7 +23,7 @@ namespace NoFences
 
                     FenceManager.Instance.LoadFences();
                     if (Application.OpenForms.Count == 0)
-                        FenceManager.Instance.CreateFence("First fence");
+                        FenceManager.Instance.CreateFence("Novo Dock");
 
                     Application.Run();
                 }

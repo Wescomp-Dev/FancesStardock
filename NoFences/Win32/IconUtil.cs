@@ -20,7 +20,7 @@ namespace NoFences.Win32
             SHGetStockIconInfo(type, SHGSI_ICON | size, ref info);
 
             var icon = (Icon)Icon.FromHandle(info.hIcon).Clone(); // Get a copy that doesn't use the original handle
-            DestroyIcon(info.hIcon); // Clean up native icon to prevent resource leak
+            DestroyIcon(info.hIcon); // Limpe o ícone nativo para evitar vazamento de recursos
 
             return icon;
         }

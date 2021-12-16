@@ -1,0 +1,13 @@
+C:\RepoGit\FancesStardock\NoFences\bin\Debug\NoFences.exe.config
+C:\RepoGit\FancesStardock\NoFences\bin\Debug\NoFences.exe
+C:\RepoGit\FancesStardock\NoFences\bin\Debug\NoFences.pdb
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.csproj.AssemblyReference.cache
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.csproj.SuggestedBindingRedirects.cache
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.EditDialog.resources
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.FenceWindow.resources
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.HeightDialog.resources
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.Properties.Resources.resources
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.csproj.GenerateResource.cache
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.csproj.CoreCompileInputs.cache
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.exe
+C:\RepoGit\FancesStardock\NoFences\obj\Debug\NoFences.pdb

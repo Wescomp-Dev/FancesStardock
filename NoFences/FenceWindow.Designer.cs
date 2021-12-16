@@ -130,8 +130,10 @@
             // 
             this.txtTitu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTitu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtTitu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTitu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitu.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtTitu.Location = new System.Drawing.Point(62, 12);
             this.txtTitu.Name = "txtTitu";
             this.txtTitu.Size = new System.Drawing.Size(230, 15);
@@ -167,6 +169,7 @@
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.FenceWindow_DragEnter);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FenceWindow_Paint);
             this.DoubleClick += new System.EventHandler(this.FenceWindow_DoubleClick);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FenceWindow_MouseClick);
             this.MouseEnter += new System.EventHandler(this.FenceWindow_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.FenceWindow_MouseLeave);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FenceWindow_MouseMove);

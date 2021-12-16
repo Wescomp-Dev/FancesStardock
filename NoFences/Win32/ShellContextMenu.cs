@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Runtime.InteropServices;
 using System.Drawing;
-using System.Windows.Forms;
 using System.IO;
-using System.Security.Permissions;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Windows.Forms;
 
 namespace Peter
 {
@@ -84,7 +82,7 @@ namespace Peter
         #region Sobrepor
 
         /// <summary>
-       /// Este método recebe mensagens da janela. Isso fará com que as opções &quot;Abrir com&quot; e &quot;Enviar para&quot; funcionem
+        /// Este método recebe mensagens da janela. Isso fará com que as opções &quot;Abrir com&quot; e &quot;Enviar para&quot; funcionem
         /// chamando Handle Menu Msg e Handle Menu Msg2. Ele também chamará o menu de contexto On Hover do mouse
         /// método do navegador ao passar o mouse sobre um item do menu de contexto.
         /// </summary>
@@ -254,7 +252,7 @@ namespace Peter
 
                 IntPtr pStrRet = Marshal.AllocCoTaskMem(MAX_PATH * 2 + 4);
                 Marshal.WriteInt32(pStrRet, 0, 0);
-                nResult = _oDesktopFolder.GetDisplayNameOf(pPIDL, SHGNO.FORPARSING, pStrRet);
+                _ = _oDesktopFolder.GetDisplayNameOf(pPIDL, SHGNO.FORPARSING, pStrRet);
                 StringBuilder strFolder = new StringBuilder(MAX_PATH);
                 StrRetToBuf(pStrRet, pPIDL, strFolder, MAX_PATH);
                 Marshal.FreeCoTaskMem(pStrRet);
@@ -1171,13 +1169,13 @@ namespace Peter
             Int32 ParseDisplayName(
                 IntPtr hwnd,
                 IntPtr pbc,
-                [MarshalAs(UnmanagedType.LPWStr)] 
+                [MarshalAs(UnmanagedType.LPWStr)]
             string pszDisplayName,
                 ref uint pchEaten,
                 out IntPtr ppidl,
                 ref SFGAO pdwAttributes);
 
-             // Permite que um cliente determine o conteúdo de uma pasta criando um item
+            // Permite que um cliente determine o conteúdo de uma pasta criando um item
             // objeto de enumeração de identificador e retornando sua interface IEnum IDList.
             // Valor de retorno: código de erro, se houver
             [PreserveSig]
@@ -1195,7 +1193,7 @@ namespace Peter
                 ref Guid riid,
                 out IntPtr ppv);
 
-           // Solicita um ponteiro para a interface de armazenamento de um objeto.
+            // Solicita um ponteiro para a interface de armazenamento de um objeto.
             // Valor de retorno: código de erro, se houver
             [PreserveSig]
             Int32 BindToStorage(
@@ -1204,7 +1202,7 @@ namespace Peter
                 ref Guid riid,
                 out IntPtr ppv);
 
-           // Determina a ordem relativa de dois objetos de arquivo ou pastas, dados seus
+            // Determina a ordem relativa de dois objetos de arquivo ou pastas, dados seus
             // listas de identificadores de itens. Valor de retorno: Se este método for bem-sucedido, o
             // campo CODE do HRESULT contém um dos seguintes valores (o código
             // pode ser recuperado usando a função auxiliar Get HResult Code): Negativo A
@@ -1237,7 +1235,7 @@ namespace Peter
             IntPtr[] apidl,
                 ref SFGAO rgfInOut);
 
-           // Recupera uma interface OLE que pode ser usada para realizar ações no
+            // Recupera uma interface OLE que pode ser usada para realizar ações no
             // objetos de arquivo ou pastas especificados.
             // Valor de retorno: código de erro, se houver
             [PreserveSig]
@@ -1250,7 +1248,7 @@ namespace Peter
                 IntPtr rgfReserved,
                 out IntPtr ppv);
 
-           // Recupera o nome de exibição do objeto de arquivo ou subpasta especificada.
+            // Recupera o nome de exibição do objeto de arquivo ou subpasta especificada.
             // Valor de retorno: código de erro, se houver
             [PreserveSig()]
             Int32 GetDisplayNameOf(
@@ -1265,7 +1263,7 @@ namespace Peter
             Int32 SetNameOf(
                 IntPtr hwnd,
                 IntPtr pidl,
-                [MarshalAs(UnmanagedType.LPWStr)] 
+                [MarshalAs(UnmanagedType.LPWStr)]
             string pszName,
                 SHGNO uFlags,
                 out IntPtr ppidlOut);
@@ -1278,7 +1276,7 @@ namespace Peter
         [GuidAttribute("000214e4-0000-0000-c000-000000000046")]
         private interface IContextMenu
         {
-           // Adiciona comandos a um menu de atalho
+            // Adiciona comandos a um menu de atalho
             [PreserveSig()]
             Int32 QueryContextMenu(
                 IntPtr hmenu,
@@ -1287,12 +1285,12 @@ namespace Peter
                 uint idCmdLast,
                 CMF uFlags);
 
-           // Executa o comando associado a um item de menu de atalho
+            // Executa o comando associado a um item de menu de atalho
             [PreserveSig()]
             Int32 InvokeCommand(
                 ref CMINVOKECOMMANDINFOEX info);
 
-           // Recupera informações sobre um comando de menu de atalho,
+            // Recupera informações sobre um comando de menu de atalho,
             // incluindo a string de ajuda e o independente de linguagem,
             // ou canônico, nome do comando
             [PreserveSig()]
@@ -1335,7 +1333,7 @@ namespace Peter
             StringBuilder commandstring,
                 int cch);
 
-           // Permite que os objetos do cliente da interface do Menu IContext para
+            // Permite que os objetos do cliente da interface do Menu IContext para
             // lida com mensagens associadas a itens de menu desenhados pelo proprietário
             [PreserveSig]
             Int32 HandleMenuMsg(
@@ -1357,7 +1355,7 @@ namespace Peter
                 uint idCmdLast,
                 CMF uFlags);
 
-           // Executa o comando associado a um item de menu de atalho
+            // Executa o comando associado a um item de menu de atalho
             [PreserveSig()]
             Int32 InvokeCommand(
                 ref CMINVOKECOMMANDINFOEX info);
@@ -1374,7 +1372,7 @@ namespace Peter
             StringBuilder commandstring,
                 int cch);
 
-           // Permite que os objetos do cliente da interface do Menu IContext para
+            // Permite que os objetos do cliente da interface do Menu IContext para
             // lida com mensagens associadas a itens de menu desenhados pelo proprietário
             [PreserveSig]
             Int32 HandleMenuMsg(
@@ -1382,7 +1380,7 @@ namespace Peter
                 IntPtr wParam,
                 IntPtr lParam);
 
-           // Permite que objetos cliente da interface IContext Menu3 para
+            // Permite que objetos cliente da interface IContext Menu3 para
             // lida com mensagens associadas a itens de menu desenhados pelo proprietário
             [PreserveSig]
             Int32 HandleMenuMsg2(
